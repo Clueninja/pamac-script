@@ -1,0 +1,10 @@
+file <- read.csv("LDS.csv")
+# btw I'm really sorry about the vector names
+B <- c(file["Life.expectancy.at.birth.1960"])
+C <- c(file["Life.expectancy.at.birth.1970"])
+D <- c(file["Life.expectancy.at.birth.1980"])
+E <- c(file["Life.expectancy.at.birth.1990"])
+F <- c(file["Life.expectancy.at.birth.2000"])
+G <- c(file["Life.expectancy.at.birth.2010"])
+S <-c(B,C,D,E,F,G)
+boxplot(S, names = c("1960","1970","1980","1990","2000","2010"), xlab = "Life expectancy at birth in year", col=c("green", "blue", "yellow", "hot pink", "light blue", "#FF007F"))
